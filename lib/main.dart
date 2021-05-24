@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'screens/future_provider.dart';
+import 'widgets/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,12 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      //home: MyFutureBuilder(title: 'Flutter Demo Home Page'),
+      title: 'FutureProvider Demo',
+      debugShowCheckedModeBanner: false,
+      theme: appTheme,
+      home: MyFutureBuilder(title: 'FutureProvider Home Page'),
     );
   }
 }
-
